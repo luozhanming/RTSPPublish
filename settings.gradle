@@ -1,0 +1,5 @@
+include ':cameraview'
+include ':rtspserver'
+include ':publish'
+include ':app'
+rootProject.name = "RTMPPublish"

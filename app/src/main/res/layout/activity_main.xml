@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <cn.com.ava.publish.CameraLivingView
+        android:id="@+id/cameraview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cameraAudio="off"
+        app:cameraFrameProcessingFormat="0x23"
+        app:cameraPlaySounds="false"
+        app:cameraEngine="camera2"
+        app:cameraExperimental="true"
+        app:cameraFrameProcessingPoolSize="4"
+        app:cameraFrameProcessingExecutors="4"
+        app:cameraPreview="glSurface"
+        app:layout_constraintDimensionRatio="w,9:16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cameraGesturePinch="zoom"
+        app:cameraGestureTap="autoFocus"
+        app:layout_constraintTop_toTopOf="parent" >
+    </cn.com.ava.publish.CameraLivingView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
